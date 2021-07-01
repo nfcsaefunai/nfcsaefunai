@@ -1,4 +1,4 @@
-import setup from './setup.js';
+import updateContent from './update-content.js';
 
 window.onload = async () => {
   const root = document.getElementById('app');
@@ -30,7 +30,7 @@ window.onload = async () => {
     if (!pageName) pageName = 'home';
     const pageContent = await getContent(pageName);
     if (pageContent) root.innerHTML = pageContent;
-    setup();
+    updateContent();
   };
 
   const currentPath = window.location.pathname;
