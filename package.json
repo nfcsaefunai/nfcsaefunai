@@ -1,0 +1,24 @@
+{
+  "name": "nfcsaefunai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier -w .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfcsaefunai/nfcsaefunai.git"
+  },
+  "keywords": [],
+  "author": "NFCS AE-FUNAI HFC",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/nfcsaefunai/nfcsaefunai/issues"
+  },
+  "homepage": "https://github.com/nfcsaefunai/nfcsaefunai#readme",
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
+}
