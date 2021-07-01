@@ -42,6 +42,14 @@ window.onload = async () => {
   }
 
   const navigate = async (e) => {
+    $('a.js-fh5co-nav-toggle').removeClass('active');
+    $('body').removeClass('overflow offcanvas');
+    
+    Array.from(document.querySelectorAll('.fh5co-nav ul li.active')).forEach(
+      (el) => el.classList.remove('active')
+    );
+    e.target.parentElement.classList.add('active');
+
     const route = e.target.attributes[0].value;
     const routeInfo = routes.filter((r) => r.path === route)[0];
     if (!routeInfo) {
