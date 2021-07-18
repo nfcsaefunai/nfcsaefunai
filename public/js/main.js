@@ -5,11 +5,10 @@ window.onload = async () => {
 
   const routes = [
     { path: '/', name: 'NFCS AE-FUNAI HFC' },
-    { path: '/sermons', name: 'Sermons | NFCS AE-FUNAI HFC' },
-    { path: '/news', name: 'News | NFCS AE-FUNAI HFC' },
-    { path: '/events', name: 'Events | NFCS AE-FUNAI HFC' },
+    { path: '/updates', name: 'Updates | NFCS AE-FUNAI HFC' },
+    { path: '/activities', name: 'Activities | NFCS AE-FUNAI HFC' },
     { path: '/about', name: 'About | NFCS AE-FUNAI HFC' },
-    { path: '/contact', name: 'Contact | NFCS AE-FUNAI HFC' }
+    { path: '/donate', name: 'Donate | NFCS AE-FUNAI HFC' }
   ];
 
   const getContent = async (page) => {
@@ -37,6 +36,9 @@ window.onload = async () => {
   const route = routes.filter((r) => r.path === currentPath)[0];
   if (route) {
     populateContent(route);
+    document
+      .querySelector(`.fh5co-nav ul li a[router-link="${route.path}"]`)
+      .parentElement.classList.add('active');
   } else {
     window.location.pathname = '/';
   }
@@ -44,7 +46,7 @@ window.onload = async () => {
   const navigate = async (e) => {
     $('a.js-fh5co-nav-toggle').removeClass('active');
     $('body').removeClass('overflow offcanvas');
-    
+
     Array.from(document.querySelectorAll('.fh5co-nav ul li.active')).forEach(
       (el) => el.classList.remove('active')
     );
