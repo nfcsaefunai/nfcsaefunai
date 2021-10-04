@@ -1555,6 +1555,10 @@ input[type='text'] {
   vertical-align: top;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .picnic-detail {
     display: flex;
