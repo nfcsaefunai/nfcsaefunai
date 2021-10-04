@@ -8,7 +8,8 @@ window.onload = async () => {
     { path: '/updates', name: 'Updates | NFCS AE-FUNAI HFC' },
     { path: '/activities', name: 'Activities | NFCS AE-FUNAI HFC' },
     { path: '/about', name: 'About | NFCS AE-FUNAI HFC' },
-    { path: '/donate', name: 'Donate | NFCS AE-FUNAI HFC' }
+    { path: '/donate', name: 'Donate | NFCS AE-FUNAI HFC' },
+    { path: '/picnic', name: 'Picnic to Obudu 2021 | NFCS AE-FUNAI HFC'}
   ];
 
   const getContent = async (page) => {
